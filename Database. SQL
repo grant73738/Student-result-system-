@@ -1,0 +1,12 @@
+CREATE TABLE student (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT,
+    matric_number TEXT
+);
+
+CREATE TABLE result (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    student_id INTEGER,
+    course TEXT,
+    score INTEGER
+);
