@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result Management System</title>
+</head>
+<body>
+    <h2>Add Student</h2>
+
+    <form action="/add_student" method="post">
+        Name: <input type="text" name="name"><br><br>
+        Matric Number: <input type="text" name="matric"><br><br>
+        <button type="submit">Add Student</button>
+    </form>
+
+    <h2>Student List</h2>
+    <ul>
+        {% for student in students %}
+            <li>{{ student[1] }} - {{ student[2] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
